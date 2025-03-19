@@ -58,7 +58,7 @@ if __name__ == "__main__":
         with open("./Dataset/ToxiGen/new_toxigen_prompt.pkl", "rb") as f:
             toxigen_prompt = pickle.load(f)
 
-        toxigen_prompt = toxigen_prompt[:5]
+        toxigen_prompt = toxigen_prompt[5:15]
         adv_gen(toxigen_prompt, "meta-llama/Llama-2-13b-hf")
 
     if args.dataset == "bold":
