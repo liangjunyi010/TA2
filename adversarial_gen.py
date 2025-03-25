@@ -55,7 +55,7 @@ if __name__ == "__main__":
         adv_gen(tqa_prompt, "tiiuae/falcon-7b")
 
     if args.dataset == "toxigen":
-        with open("./Dataset/ToxiGen/toxigen_prompt.pkl", "rb") as f:
+        with open("./Dataset/ToxiGen/new_toxigen_prompt.pkl", "rb") as f:
             toxigen_prompt = pickle.load(f)
 
         toxigen_prompt = toxigen_prompt[:10]
