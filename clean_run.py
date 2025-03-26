@@ -118,6 +118,7 @@ if __name__ == "__main__":
         if args.prompt_type == "freeform":
             with open("./Dataset/ToxiGen/new_toxigen_prompt.pkl", "rb") as f:
                 data = pickle.load(f)
+            data = data[:10]
 
         if args.prompt_type == "choice":
             with open(f"./Dataset/ToxiGen/toxigen_A_B.json", "r") as f:
